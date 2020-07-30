@@ -1,21 +1,22 @@
+//webpack.config.js
+const path = require('path');
+
 module.exports = {
-  entry: __dirname + '/client/src/index.jsx',
+  entry: ['@babel/polyfill', './client/src/index.jsx'],
+  output: {
+    path: path.join(__dirname, '/public'),
+    filename: 'app.js'
+  },
+  devServer: {
+    port: 3000
+  },
   module: {
     rules: [
       {
-        test: [/\.jsx$/],
+        test: /\.jsx?$/,
         exclude: /node_modules/,
-        use: {
-          loader: 'babel-loader',
-          options: {
-            presets: ['@babel/preset-react', '@babel/preset-env']
-          }
-        }
-      }
+        loader: 'babel-loader',
+      },
     ]
-  },
-   output: {
-    filename: 'bundle.js',
-    path: __dirname + '/public'
   }
-};
+}

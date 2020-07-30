@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const SearchBar = () => {
+const SearchBar = (props) => {
   return (
     <form id='search'>
       <label> Search:
