@@ -1,0 +1,31 @@
+{
+  "name": "challenge_2",
+  "version": "1.0.0",
+  "description": "CryptoGraph",
+  "main": "server.js",
+  "dependencies": {
+    "core-js": "^3.6.5",
+    "regenerator-runtime": "^0.13.7"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.11.0",
+    "@babel/preset-env": "^7.11.0",
+    "@babel/preset-react": "^7.10.4",
+    "axios": "^0.19.2",
+    "babel-loader": "^8.1.0",
+    "chart.js": "^2.9.3",
+    "express": "^4.17.1",
+    "path": "^0.12.7",
+    "react": "^16.13.1",
+    "react-chartjs-2": "^2.9.0",
+    "react-dom": "^16.13.1",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12"
+  },
+  "scripts": {
+    "start": "nodemon server.js",
+    "react-dev": "webpack -d --watch"
+  },
+  "author": "Jchan",
+  "license": "ISC"
+}
